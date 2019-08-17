@@ -1,44 +1,58 @@
-body {
-    /* background: #fafafa;
-    color: #333333; */
-    /* margin-top: 5rem; */
-}
+/* HEADER/NAVBAR section */
 
-h1, h2, h3, h4, h5, h6 {
-  color: #444444;
+header {
+   /* height: 800px; */
+  /* background-color: #c3c3c3; */
+  background-image: url('/static/home/header2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  height: 90vh;
 }
 
 ul {
   margin: 0;
 }
 
+.jumbotron {
+  /* transparent */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  min-height: 100%;
+}
+
+/* color of the whole navbar */
 .bg-steel {
-  background-color: #5f788a;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  transition: 0.4s;
+}
+
+.site-header a {
+  font-size: 22px;
+  transition: 0.4s;
 }
 
 .site-header .navbar-nav .nav-link {
-  color: #cbd5db;
+  color: #000;
+  font-family: 'Avenir';
+  padding-left: 30px;
+}
+
+.navbar-dark .navbar-brand {
+  color: #000 !important;
 }
 
 .site-header .navbar-nav .nav-link:hover {
-  color: #ffffff;
+  color: #273B7B;
 }
 
 .site-header .navbar-nav .nav-link.active {
   font-weight: 500;
 }
 
-.navbar {
-  width: 70%;
-  margin: 0 auto;
-  margin-top: 20px;
-}
-
-/* MAIN section */
-
-.site-main {
-  height: 600px;
-  
+.header-titles h1{
+  color: #cbd5db;
+  font-size: 72px;
 }
 
 @media (max-width: 991.98px) { 
@@ -46,4 +60,94 @@ ul {
     width: 100%;
     margin-top: 0px;
   }
+}
+
+/* Separator */
+
+.separator {
+  padding-top: 0;
+  margin: 0;
+  border-top: 6px solid  rgba(47, 46, 46, 1);
+}
+
+/* ABOUT section */
+
+.about-section {
+  height: 500px;
+  /* border: 2px solid red; */
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.about-section p, .about-section ul {
+  color: #000 !important;
+  font-size: 21px;
+  margin-bottom: 10px !important;
+  line-height: normal;
+  letter-spacing: normal;
+  /* font-family: 'Avenir'; */
+  font-family: 'Avenir';
+}
+
+.about-grid {
+  height: 100%;
+}
+
+.about-presentation {
+  padding: 20px;
+}
+
+.about-me-title {
+  font-size: 45px;
+  font-family: 'Avenir';
+  color: #2F2E2E;
+  margin-bottom: 30px;
+}
+
+/* EXPERIENCE section */
+.experience-section {
+  background-color: rgba(155, 155, 155, 0.21);
+  padding-top: 30px;
+}
+
+.experience-image {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.experience-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.experience-title {
+  background-color: #276464;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 45px;
+  margin-top: 10px;
+  color: white;
+  font-size: 1.1em;
+  /* font-family: 'Avenir'; */
+  font-family: 'avenirregular';
+  text-transform: uppercase;
+}
+
+.experience-description {
+  width: fit-content;
+  /* margin: 0 auto; */
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 1.1em;
+  font-family: Avenir;
+}
+
+/* FOOTER section */
+
+footer {
+  height: 40px;
+  background-color: black;
 }

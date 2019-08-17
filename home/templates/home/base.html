@@ -18,29 +18,67 @@
 
 <body>
     <header class="site-header">
-        <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top" id="navbar">
             <div class="container">
-                <a class="navbar-brand mr-4" href="/">Django Blog</a>
+                <a class="navbar-brand mr-4" href="/">
+                    ML
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
                     aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarToggle">
-                   
                     <!-- Navbar Right Side -->
-                    <div class="navbar-nav ml-auto">
-                        <a class="nav-item nav-link" href="#">Login</a>
-                        <a class="nav-item nav-link" href="/register">Register</a>
+                    <div class="navbar-nav ml-auto ">
+                        <a class="nav-item nav-link navigation-title"  href="#">About</a>
+                        <a class="nav-item nav-link navigation-title"  href="#">Experience</a>
+                        <a class="nav-item nav-link navigation-title"  href="#">Contact</a>
+                        <a class="nav-item nav-link navigation-title"  href="#">Portfolio</a>
                     </div>
                 </div>
             </div>
         </nav>
+        <section class="header-titles jumbotron jumbotron-fluid text-white d-flex justify-content-start align-items-center">
+            <div class="container">
+                <h1>Mouad Lasri</h1>
+            </div>
+        </section>
     </header>
 
-    <main class="site-main">
+    <hr class="separator">
 
-    </main>
+    <section class="about-section">
+        <div class="about-grid">
+            <div class="row ">
+                <div class="col-md-6 col-lg-6">
+                    
+                </div>
+                <div class="col-md-6 col-lg-6 about-presentation">
+                    {% block about-content %}
+                    {% endblock about-content %}
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <hr class="separator">
+
+    <section class="experience-section">
+        <div class="experience" id="experience">
+            <p class="experience-title">Experience</p>
+            <p class="experience-description">
+                Throughout the last four years, I had the opportunity to intern in companies
+                and participate in programs which allowed me to gain valuable experience, and helped me grow both personally and
+                professionally.</p>
+        </div>
+        <div class="experience-image">
+           <img src='/static/home/experience.svg' alt="experience image">
+        </div>
+    </section>
+
+    <footer>
+        Copyright
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -52,6 +90,33 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+        
+             if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.padding = "10px 10px";
+                document.getElementById("navbar").style.backgroundColor = "#2c2d3e";
+                var titles = document.getElementsByClassName("navigation-title");
+                // console.log(titles);
+                for(var i=0; i< titles.length; i++) {
+                    titles[i].style.fontSize="15px";
+                    titles[i].style.color="white";
+                }
+            } else {
+                document.getElementById("navbar").style.padding = "20px 10px";
+                document.getElementById("navbar").style.backgroundColor = "#f1f1f1";
+                var titles = document.getElementsByClassName("navigation-title");
+                 for (var i = 0; i < titles.length; i++) {
+                    titles[i].style.fontSize = "22px";
+                    titles[i].style.color = "black";
+                 }
+            }
+        }
+    </script>
 </body>
 
 </html>
