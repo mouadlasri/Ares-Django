@@ -1,5 +1,9 @@
 {% extends "home/base.html" %}
 
+{% block test-content %}
+{% include "portfolio/projects.html" %}
+{% endblock test-content %}
+
 {% block about-content %}
     <h3 class="about-me-title">About me</h3>
     <p>
@@ -20,4 +24,38 @@
     </ul>
     <p>I have previous experience in Nodejs, Express and React Native.</p> -->
 {% endblock about-content %}
+
+{% block portfolio-content %}
+    <div class="container-fluid centered-grid" id="portfolio">
+        <div class="row">
+            <div class="col-md-8 grid">
+                <div class="filter-section">
+                    <button class="btn btn-dark btn-light btn-filter ">
+                        Filter
+                    </button>
+                    <button class="btn btn-warning btn-filter ">
+                        Data Analysis
+                    </button>
+                    <button class="btn btn-danger btn-filter btn-disabled ">
+                        Web Development
+                    </button>
+                    <button class="btn btn-info btn-filter btn-disabled ">
+                        Tutorials
+                    </button>
+                </div>
+    
+    
+                <!-- <div class="col-md-4 grid-box tutorials">
+                    <div class="grid-box-img">
+                        <img src='https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' alt="datacamp img" />
+
+                        <p class="project-description">A tutorial on how to deploy a Nodejs app to Azure using Azure App
+                            Service</p>
+                    </div>
+                </div> -->
+    
+            </div>
+        </div>
+    </div>
+{% endblock portfolio-content %}
 

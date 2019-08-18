@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'tinymce',
-    'blog.apps.BlogConfig',
+    'portfolio.apps.PortfolioConfig',
     'home.apps.MainConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -149,4 +149,4 @@ TINYMCE_DEFAULT_CONFIG = {
     'contextmenu': 'formats | link image',
     'menubar': True,
     'statusbar': True,
-    }
+}

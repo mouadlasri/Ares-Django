@@ -45,6 +45,9 @@
         </section>
     </header>
 
+    {% block test-content %}
+        
+    {% endblock test-content %}
     <hr class="separator">
 
     <section class="about-section">
@@ -74,6 +77,13 @@
         <div class="experience-image">
            <img src='/static/home/experience.svg' alt="experience image">
         </div>
+    </section>
+
+    <hr class="separator">
+
+    <section class="portfolio-section ">
+        {% block portfolio-content %}
+        {% endblock portfolio-content %}
     </section>
 
     <footer>

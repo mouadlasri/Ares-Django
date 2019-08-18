@@ -1,4 +1,6 @@
-/* HEADER/NAVBAR section */
+/***********************************************
+================= HEADER/NAVBAR section ==================
+************************************************/
 
 header {
    /* height: 800px; */
@@ -62,7 +64,18 @@ ul {
   }
 }
 
-/* Separator */
+
+
+
+
+
+
+
+
+
+/***********************************************
+================= SEPARATOR ==================
+************************************************/
 
 .separator {
   padding-top: 0;
@@ -70,7 +83,23 @@ ul {
   border-top: 6px solid  rgba(47, 46, 46, 1);
 }
 
-/* ABOUT section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************
+================= ABOUT section ==================
+************************************************/
 
 .about-section {
   height: 500px;
@@ -105,7 +134,26 @@ ul {
   margin-bottom: 30px;
 }
 
-/* EXPERIENCE section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************
+================= EXPERIENCE section ==================
+************************************************/
+
 .experience-section {
   background-color: rgba(155, 155, 155, 0.21);
   padding-top: 30px;
@@ -145,7 +193,164 @@ ul {
   font-family: Avenir;
 }
 
-/* FOOTER section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************
+================= PORTFOLIO section ==================
+************************************************/
+
+
+.grid {
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.grid a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.grid a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.grid-section {
+  margin: 0;
+}
+
+.centered-grid {
+  margin-top: 50px;
+}
+
+.grid-box {
+  /* height: 280px; */
+  transition: all 0.2s ease-in-out;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.911);
+}
+
+.grid-box:hover {
+  transform: scale(1.03);
+  z-index: 3;
+}
+
+.grid-box-img {
+  height: 70%;
+  width: 100%;
+  margin: 0;
+}
+
+.grid-box-img img {
+  width: 100%;
+  
+}
+
+
+.filter-section {
+  margin: 10px 0px;
+  text-align: left;
+}
+
+.btn-info {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.btn-filter {
+  margin-right: 4px;
+}
+
+.btn-filter:hover {
+  cursor: context-menu;
+}
+
+.data-analysis, .web-dev, .tutorials {
+  border-radius: 0px;
+  border: 1px solid black;
+}
+
+
+.data-analysis:hover {
+  box-shadow:  0 0 50px #dc3545;
+}
+
+.web-dev:hover {
+  box-shadow:  0 0 50px #ffc107;
+}
+
+.tutorials:hover {
+  box-shadow:  0 0 50px #17a2b8;
+}
+
+.project-description {
+  text-align: left;
+  line-height: 1.2em;
+  margin-left: 5px;
+  margin-top: 5px;
+  /* font-family: 'Avenir'; */
+  font-family: 'avenirregular';
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 768px) {
+  .filter-section {
+    text-align: center;
+  }
+
+  .filter-section .btn {
+    padding: 0.250rem 0.5rem !important;
+    font-size: 0.8rem !important;
+  }
+}
+
+@media screen and (min-width: 541px) and (max-width: 767px) {
+  .grid-box {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************
+================= FOOTER section ==================
+************************************************/
 
 footer {
   height: 40px;
