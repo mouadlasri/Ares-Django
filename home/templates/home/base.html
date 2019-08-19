@@ -12,7 +12,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="{% static 'home/main.css' %}">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/main.css' %}">
+
+    <!-- Custom JavaScript -->
+    <script src="{% static 'home/js/main.js' %}"></script>
     <title>ML</title>
 </head>
 
@@ -20,7 +27,7 @@
     <header class="site-header">
         <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top" id="navbar">
             <div class="container">
-                <a class="navbar-brand mr-4" href="/">
+                <a class="navbar-brand mr-4" href="/" id="brand">
                     ML
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
@@ -40,7 +47,7 @@
         </nav>
         <section class="header-titles jumbotron jumbotron-fluid text-white d-flex justify-content-start align-items-center">
             <div class="container">
-                <h1>Mouad Lasri</h1>
+                <h1 id="name"></h1>
             </div>
         </section>
     </header>
@@ -57,8 +64,14 @@
                     
                 </div>
                 <div class="col-md-6 col-lg-6 about-presentation">
-                    {% block about-content %}
-                    {% endblock about-content %}
+                    <h3 class="about-me-title">About me</h3>
+                    <p>
+                        My name is Mouad Lasri, a tech savvy senior student at Al Akhawayn University in Ifrane, Morocco. I am majoring in
+                        Computer Science, and minoring in Business Administration and Mathematics.
+                    </p>
+                    <p>
+                        I am an aspiring Data Analyst who enjoys building websites and making tutorials on various web technologies.
+                    </p>
                 </div>
             </div>
         </div>
@@ -74,18 +87,48 @@
                 and participate in programs which allowed me to gain valuable experience, and helped me grow both personally and
                 professionally.</p>
         </div>
-        <div class="experience-image">
-           <img src='/static/home/experience.svg' alt="experience image">
+
+        <div class="experience-image" data-toggle="modal" data-target=".exampleModal">
+            <img src='/static/home/experience.svg' alt="experience image">
         </div>
+
+        <div class="modal fade bd-example-modal-xl exampleModal" tabindex="-1" role="dialog" aria-labelledby="#exampleModal"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                <img src='/static/home/experience.svg' alt="experience image">
+                </div>
+            </div>
+        </div>
+        
     </section>
 
     <hr class="separator">
 
-    <section class="portfolio-section ">
-        {% block portfolio-content %}
-        {% endblock portfolio-content %}
-    </section>
+    <div class="container-fluid centered-grid" id="portfolio">
+        <div class="row">
+            <div class="col-md-12 col-lg-12 grid">
+                <div class="filter-section">
+                    <button class="btn btn-dark btn-light btn-filter ">
+                        Filter
+                    </button>
+                    <button class="btn btn-warning btn-filter ">
+                        Data Analysis
+                    </button>
+                    <button class="btn btn-danger btn-filter btn-disabled ">
+                        Web Development
+                    </button>
+                    <button class="btn btn-info btn-filter btn-disabled ">
+                        Tutorials
+                    </button>
+                </div>
 
+                {% block portfolio-content %}
+                {% endblock portfolio-content %}
+        
+            </div>
+        </div>
+    </div>
     <footer>
         Copyright
     </footer>
@@ -101,32 +144,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <script>
-        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-        
-             if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                document.getElementById("navbar").style.padding = "10px 10px";
-                document.getElementById("navbar").style.backgroundColor = "#2c2d3e";
-                var titles = document.getElementsByClassName("navigation-title");
-                // console.log(titles);
-                for(var i=0; i< titles.length; i++) {
-                    titles[i].style.fontSize="15px";
-                    titles[i].style.color="white";
-                }
-            } else {
-                document.getElementById("navbar").style.padding = "20px 10px";
-                document.getElementById("navbar").style.backgroundColor = "#f1f1f1";
-                var titles = document.getElementsByClassName("navigation-title");
-                 for (var i = 0; i < titles.length; i++) {
-                    titles[i].style.fontSize = "22px";
-                    titles[i].style.color = "black";
-                 }
-            }
-        }
-    </script>
+    
 </body>
 
 </html>
