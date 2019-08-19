@@ -5,11 +5,16 @@
 header {
    /* height: 800px; */
   /* background-color: #c3c3c3; */
-  background-image: url('/static/home/header2.jpg');
+  /* background-image: url('/static/home/header2.jpg'); */
+  background-image: url('https://images.unsplash.com/photo-1511576661531-b34d7da5d0bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 50%;
-  height: 90vh;
+  height: 100vh;
+}
+
+#name {
+  color: white;
 }
 
 ul {
@@ -73,6 +78,12 @@ ul {
 
 
 
+
+
+
+
+
+
 /***********************************************
 ================= SEPARATOR ==================
 ************************************************/
@@ -80,7 +91,7 @@ ul {
 .separator {
   padding-top: 0;
   margin: 0;
-  border-top: 6px solid  rgba(47, 46, 46, 1);
+  border-top: 4px solid  rgba(47, 46, 46, 1);
 }
 
 
@@ -117,6 +128,12 @@ ul {
   letter-spacing: normal;
   /* font-family: 'Avenir'; */
   font-family: 'Avenir';
+}
+
+.centered-grid {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .about-grid {
@@ -212,6 +229,10 @@ ul {
 /***********************************************
 ================= PORTFOLIO section ==================
 ************************************************/
+#portfolio {
+  background-color: #3c3c3c;
+}
+
 .portfolio-project {
   margin-top: 30px !important;
   width: 95%;
@@ -223,7 +244,11 @@ ul {
   padding: 25px;
   border-radius: 25px;
   height: 400px;
-  transition: all .3s;
+  transition: all .3s ease-in-out;
+}
+
+.portfolio-project:hover {
+  transform: scale(1.03);
 }
 
 .thumbnail {
@@ -241,11 +266,16 @@ ul {
   flex-shrink: 0;
   height: 300px;
   /* background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); */
-  box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
+  box-shadow: 4px 13px 30px 1px rgba(23, 162, 184, 0.5);
   border-radius: 20px;
+  border: 1px solid #c3c3c3;
   /* transform: translateX(-80px); */
   transform: translate(-80px, 20px);
   overflow: hidden;
+}
+
+.img-web-development {
+  box-shadow: 4px 13px 30px 1px rgba(220, 53, 69, 0.5);
 }
 
 .date {
@@ -295,54 +325,54 @@ ul {
   }
 }
 
- @media screen and (max-width: 768px) {
-   .portfolio-project {
-      min-height: 500px;
-      height: auto;
-      margin: 180px auto;
-      margin-top: 180px !important;
-   }
-   
-   .item {
-      flex-direction: column;
-   }
-   
-   .img {
-      transform: translateY(-50%);
-      width: 90%;
-   }
-   
-   .content {
-      margin-top: -80px;
-      text-align: center;
-      padding: 0 30px;
-   }
+@media screen and (max-width: 768px) {
+  .portfolio-project {
+    min-height: 500px;
+    height: auto;
+    margin: 180px auto;
+    margin-top: 180px !important;
   }
-
- @media screen and (max-width: 576px) {
-   .img {
-        width: 95%;
-    }
-   
-   .content {
-     padding: 0;
-   }
-   
-   
-   .button {
-     width: 100%;
-   }
-   }
-
-  @media screen and (max-height: 500px) and (min-width: 992px) {
-    .portfolio-project {
-        height: 350px;      
-    }
-    
-    .img {
-      height: 270px;
-    }
+  
+  .item {
+    flex-direction: column;
   }
+  
+  .img {
+    transform: translateY(-50%);
+    width: 90%;
+  }
+  
+  .content {
+    margin-top: -80px;
+    text-align: center;
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .img {
+      width: 95%;
+  }
+  
+  .content {
+    padding: 0;
+  }
+  
+  
+  .button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-height: 500px) and (min-width: 992px) {
+  .portfolio-project {
+      height: 350px;      
+  }
+  
+  .img {
+    height: 270px;
+  }
+}
 
 
 .filter-section {
@@ -364,17 +394,17 @@ ul {
 }
 
 .data-analysis, .web-dev, .tutorials {
-  border-radius: 0px;
-  border: 1px solid black;
+  /* border-radius: 0px; */
+  /* border: 1px solid black; */
 }
 
 
 .data-analysis:hover {
-  box-shadow:  0 0 50px #dc3545;
+  box-shadow:  0 0 50px #ffc107;
 }
 
-.web-dev:hover {
-  box-shadow:  0 0 50px #ffc107;
+.web-development:hover {
+  box-shadow:  0 0 50px #dc3545;
 }
 
 .tutorials:hover {
@@ -413,7 +443,11 @@ ul {
   }
 }
 
-
+i {
+  float: right;
+  font-size: 30px;
+  padding: 0 10px;
+}
 
 
 

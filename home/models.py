@@ -12,8 +12,8 @@ class Post(models.Model):
     thumbnail = models.TextField()
     technologies = models.TextField()
     date_posted = models.DateTimeField(default=timezone.now)
-    type = models.CharField(max_length=10, default=None)
-
+    type = models.CharField(max_length=15, default=None)
+    
     def __str__(self):
         return self.title
 

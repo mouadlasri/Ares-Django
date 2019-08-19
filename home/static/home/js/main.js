@@ -11,6 +11,7 @@ function scrollFunction() {
         document.getElementById("navbar").style.padding = "10px 10px";
         document.getElementById("navbar").style.backgroundColor = "#2c2d3e";
         document.getElementById("brand").style.color = "white";
+        document.getElementById("brand").fontSize = "15px";
         var titles = document.getElementsByClassName("navigation-title");
         // console.log(titles);
         for (var i = 0; i < titles.length; i++) {
@@ -21,6 +22,7 @@ function scrollFunction() {
         document.getElementById("navbar").style.padding = "20px 10px";
         document.getElementById("navbar").style.backgroundColor = "#f1f1f1";
         document.getElementById("brand").style.color = "black";
+        document.getElementById("brand").fontSize = "22px";
         var titles = document.getElementsByClassName("navigation-title");
         for (var i = 0; i < titles.length; i++) {
             titles[i].style.fontSize = "22px";

@@ -2,20 +2,50 @@
 
 {% block portfolio-content %}
 {% for post in posts %}
-    <div class="portfolio-project">
+    <div class="portfolio-project {{post.type}} col-xs-12 col-sm-12">
         <div class="item">
-            <div class="img">
+            <div class="img img-{{post.type}}">
                 <img src={{post.thumbnail|safe}} alt="" class="thumbnail">
             </div>
             <div class="content">
-                <span class="date">26 December 2019</span>
+                <span class="date"> {{post.date_posted | date:"F d, Y" }} 
+                    {% for tech in post.technologies_as_list %}
+                        {% ifequal tech 'database' %}
+                            <i class="fas fa-{{tech}}"></i>
+                        {% else %}
+                            <i class="fab fa-{{tech}}"></i>
+                        {% endifequal %}
+                    {% endfor %}
+                </span>
+                
                 <div class="title">{{ post.title }}</div>
                 <div class="description-detailed">{{ post.description }}</div>
                 <a href="#" class="button">READ MORE</a>
             </div>
         </div>
     </div>
-
+    <div class="portfolio-project {{post.type}} col-xs-12 col-sm-12">
+        <div class="item">
+            <div class="img img-{{post.type}}">
+                <img src={{post.thumbnail|safe}} alt="" class="thumbnail">
+            </div>
+            <div class="content">
+                <span class="date"> {{post.date_posted | date:"F d, Y" }} 
+                    {% for tech in post.technologies_as_list %}
+                        {% ifequal tech 'database' %}
+                            <i class="fas fa-{{tech}}"></i>
+                        {% else %}
+                            <i class="fab fa-{{tech}}"></i>
+                        {% endifequal %}
+                    {% endfor %}
+                </span>
+                
+                <div class="title">{{ post.title }}</div>
+                <div class="description-detailed">{{ post.description }}</div>
+                <a href="#" class="button">READ MORE</a>
+            </div>
+        </div>
+    </div>
 {% endfor %}
 
 {% endblock portfolio-content %}
