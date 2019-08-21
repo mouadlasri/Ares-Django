@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
+
+
+
 /***********************************************
 ================= HEADER/NAVBAR section ==================
 ************************************************/
@@ -84,6 +88,16 @@ ul {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /***********************************************
 ================= SEPARATOR ==================
 ************************************************/
@@ -91,7 +105,8 @@ ul {
 .separator {
   padding-top: 0;
   margin: 0;
-  border-top: 4px solid  rgba(47, 46, 46, 1);
+  /* border-top: 4px solid  rgba(47, 46, 46, 1); */
+  border-top: 2px solid black;
 }
 
 
@@ -113,11 +128,15 @@ ul {
 ************************************************/
 
 .about-section {
-  height: 500px;
-  /* border: 2px solid red; */
-  width: 70%;
+  height: 550px;
+  width: 100%;
   margin: 0 auto;
-  padding-top: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .about-section {
+    height: 100%;
+  }
 }
 
 .about-section p, .about-section ul {
@@ -126,8 +145,19 @@ ul {
   margin-bottom: 10px !important;
   line-height: normal;
   letter-spacing: normal;
-  /* font-family: 'Avenir'; */
   font-family: 'Avenir';
+}
+
+.about-right {
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
+   /* background-image: url('/static/home/skills3.jpg'); */
+   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-right, .about-left {
+  height: 100%;
 }
 
 .centered-grid {
@@ -138,18 +168,285 @@ ul {
 
 .about-grid {
   height: 100%;
+  margin: 0;
 }
 
 .about-presentation {
   padding: 20px;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.about-media img{
+  width: 75px;
+  height: 75px;
+}
+
+.about-media h5 {
+  color: black !important;
+}
+
+.media-body {
+  margin-left: 30px;
+  margin-bottom: 20px;  
+}
+
+.media-body h4, .media-body {
+  font-size: 16px;
+}
+
+.media-body h5, .media-body p, .media-body h4 {
+  color: white;
+  font-size: 16px;
+}
+
+.about-details-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.about-left:hover, .about-right:hover {
+  transform: scale(1.01);
+  
+}
+
+.about-details-image {
+  width: 75px;
+  height: 75px;
+}
+
+.about-left {
+  /* background-color: white; */
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
+  /* background-image: url('/static/home/skills4.jpg'); */
+   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-presentation-content {
+  padding: 20px 100px;
+  text-align: left;
+}
+
+@media screen and (max-width: 1096px) {
+  .about-presentation-content {
+    padding: 20px 0px;
+  }
+}
+
+
+#profile-image {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    margin-left: -75px; /* half of image width */
+    width: 150px !important;
+    height: 150px;
+    border-radius: 50%;
 }
 
 .about-me-title {
   font-size: 45px;
   font-family: 'Avenir';
   color: #2F2E2E;
-  margin-bottom: 30px;
 }
+
+.about-me-text {
+  font-size: 16px !important;
+}
+
+.about-right-title {
+  text-align: center;
+  padding-top: 20px;
+  font-family: 'Avenir';
+  color: white;
+}
+
+
+.grid-container {
+  padding-top: 30px;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 25px 0px;
+}
+
+.grid-item {
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  height: 80px;
+  width: 85px;
+  margin: 0 auto;
+}
+
+/* SKILLS ICON */
+
+.python {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.pandas {
+  background-image: url('https://pythonawesome.com/content/images/2018/05/pandas-logo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  background-size: 170%;
+
+}
+
+.numpy {
+  background-image: url('https://numfocus.org/wp-content/uploads/2016/07/numpy-logo-300.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.tableau {
+  background-image: url('https://financeandbusiness.ucdavis.edu/sites/g/files/dgvnsk4871/files/styles/sf_landscape_16x9/public/images/article/tableau_logo_3.png?h=c673cd1c&itok=DS6LQBtd');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.react {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bootstrap {
+  background-image: url('https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-social.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.django {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvuCHonBiuXCY1wbBiJnNh3RDLbY-6l52-eWQ5EtgtDCNnU2f-');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sql {
+  background-image: url('https://imitsuriname.org/wp-content/uploads/2019/07/kisspng-microsoft-sql-server-microsoft-azure-sql-database-5b1f2919db9da6.3116927715287687938996.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.microsoft-azure {
+  background-image: url('https://cdn.worldvectorlogo.com/logos/azure-1.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.github {
+  background-image: url('https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+
+.javascript {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+
+.nodejs {
+  background-image: url('http://pluspng.com/img-png/nodejs-logo-png-nice-images-collection-node-js-desktop-wallpapers-370.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.about-right-buttons {
+  text-align: center;
+  padding: 40px;
+}
+
+@media screen and (max-width: 1096px) {
+  .about-right-buttons {
+    padding: 40px 10px;
+  }
+}
+
+
+.about-right-buttons a {
+  border-radius: 30px;
+}
+
+#get-in-touch, #portfolio-shortcut {
+  padding: 12px 50px;
+
+}
+
+#get-in-touch {
+  margin-right: 40px;
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+/* 
+#get-in-touch:hover {
+  background-color: #2c2d3e;
+  color: white;
+} */
+
+#portfolio-shortcut {
+  background-color: #273B7B;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#portfolio-shortcut:hover {
+  border-color: #273B7B;
+  color: #273B7B;
+  background-color: white;
+}
+
+
+
+
+
+
+
+.about-left, .about-right {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+.about-right {
+  background-image: url('/static/home/left-about-test.jpg')   !important;
+}
+.about-left {
+  background-image: url('https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')    !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -174,7 +471,7 @@ ul {
 .experience-section {
   background-color: rgba(155, 155, 155, 0.21);
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 
 .experience-image {
@@ -230,7 +527,11 @@ ul {
 ================= PORTFOLIO section ==================
 ************************************************/
 #portfolio {
-  background-color: #3c3c3c;
+  /* background-color: #3c3c3c; */
+  background-image: url('/static/home/portfolio.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .portfolio-project {
@@ -475,7 +776,21 @@ i {
 ************************************************/
 
 footer {
-  height: 40px;
+  height: 80px;
   background-color: black;
   width: 100%;
+}
+
+
+
+.prot {
+  height: 400px;
+}
+
+.prot .row {
+  height: 100%;
+}
+
+.a {
+  border: 1px solid blue;
 }

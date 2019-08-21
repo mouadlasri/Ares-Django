@@ -52,32 +52,99 @@
         </section>
     </header>
 
-    {% block test-content %}
-        
-    {% endblock test-content %}
+  
+
     <hr class="separator">
 
+
+    <!-- ABOUT SECTION -->
+
+
     <section class="about-section">
-        <div class="about-grid">
-            <div class="row ">
-                <div class="col-md-6 col-lg-6">
-                    
-                </div>
-                <div class="col-md-6 col-lg-6 about-presentation">
+        <div class="row about-grid">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 about-presentation about-left">
+
+                <!-- <img src="/static/home/profile-picture.png" alt="profile image" id="profile-image"> -->
+
+                <div class="about-presentation-content">
                     <h3 class="about-me-title">About me</h3>
-                    <p>
-                        My name is Mouad Lasri, a tech savvy senior student at Al Akhawayn University in Ifrane, Morocco. I am majoring in
+                    <hr style="width: 40%; border-top: 1px solid black !important; margin-left: 0;">
+                    <p class="about-me-text">
+                        My name is Mouad Lasri, a tech savvy senior student at Al Akhawayn University in Ifrane, Morocco. I am majoring
+                        in
                         Computer Science, and minoring in Business Administration and Mathematics.
                     </p>
-                    <p>
+                    <p class="about-me-text">
                         I am an aspiring Data Analyst who enjoys building websites and making tutorials on various web technologies.
                     </p>
+                    <p>
+                        Education:
+                    </p>
+                    <div class="media about-media">
+                        <img class="mr-3"
+                            src="https://media.licdn.com/dms/image/C510BAQFN8ajGw-I_oA/company-logo_400_400/0?e=1574294400&amp;v=beta&amp;t=NfY3rhm0cUucnanYhk01dDbRs7t2hQFD2BT4kPsezsw"
+                            alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h5 class="mt-0">Al Akhawayn University</h5>
+                            <p class="mt-0">Fall 2015 - Spring 2020 (expected)</p>
+                            <p class="mt-0">Major in Computer Science, minor in Business Administration and Mathematics</p>
+                        </div>
+                        
+                    </div>
+
+                    <p>
+                        Certifications:
+                    </p>
+                    <div class="media about-media">
+                        <img class="mr-3"
+                            src="https://www.datacamp.com/datacamp-sq.png"
+                            alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h5 class="mt-0">DataCamp</h5>
+                            <p class="mt-0">Data Analysis with Python</p>
+                            <p class="mt-0">Issued Jun 2019</p>
+                        </div>
+                    
+                    </div>
                 </div>
+               
             </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 about-right">
+                <h2 class="about-right-title">Skills and Technologies</h2>
+                <hr style="width: 60%; border-top: 1px solid white !important">
+                <div class="grid-container">
+                    <div class="grid-item python"></div>
+                    <div class="grid-item pandas"></div>
+                    <div class="grid-item numpy"></div>
+                    <div class="grid-item tableau"></div>
+                    <div class="grid-item django"></div>
+                    <div class="grid-item sql"></div>
+                    <div class="grid-item microsoft-azure"></div>
+                    <div class="grid-item react"></div>
+                    <div class="grid-item bootstrap"></div>
+                    <div class="grid-item github"></div>
+                    <div class="grid-item javascript"></div>
+                    <div class="grid-item nodejs"></div>
+                </div>
+
+                <div class="about-right-buttons">
+                    <a href="#" class="btn btn-primary btn-lg active" role="button"  id="get-in-touch">Get in touch!</a>
+                    <a href="#" class="btn btn-secondary btn-lg active" role="button"  id="portfolio-shortcut">Portfolio</a>
+                </div>
+                
+            </div>  
         </div>
     </section>
 
+
+
+
+
     <hr class="separator">
+
+
+    <!-- EXPERIENCE SECTION -->
+
 
     <section class="experience-section">
         <div class="experience" id="experience">
@@ -103,15 +170,20 @@
         
     </section>
 
+
+
+
+
     <hr class="separator">
+
+
+    <!-- PORTFOLIO SECTION -->
+
 
     <div class="container-fluid centered-grid" id="portfolio">
         <div class="row">
             <div class="col-md-12 col-lg-12 grid">
                 <div class="filter-section">
-                    <button class="btn btn-dark btn-light btn-filter ">
-                        Filter
-                    </button>
                     <button class="btn btn-warning btn-filter ">
                         Data Analysis
                     </button>
@@ -131,6 +203,20 @@
             </div>
         </div>
     </div>
+
+
+    <hr class="separator">
+
+
+    <!-- CONTACT SECTION -->
+
+
+
+
+
+    <!-- FOOTER SECTION -->
+    
+    
     <footer>
         Copyright
     </footer>
