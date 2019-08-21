@@ -694,11 +694,6 @@ ul {
   cursor: context-menu;
 }
 
-.data-analysis, .web-dev, .tutorials {
-  /* border-radius: 0px; */
-  /* border: 1px solid black; */
-}
-
 
 .data-analysis:hover {
   box-shadow:  0 0 50px #ffc107;
