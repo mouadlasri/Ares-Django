@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -123,11 +124,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 # PROJECT_DIR = 'https://projectares.scm.azurewebsites.net/wwwroot/'
-PROJECT_DIR = 'https://projectares.scm.azurewebsites.net/'
-# STATIC_ROOT = "https://projectares.scm.azurewebsites.net/static/"
-# STATIC_ROOT= os.path.join(BASE_DIR,'static/')
+# PROJECT_DIR = 'https://projectares.scm.azurewebsites.net/'
+# # STATIC_ROOT = "https://projectares.scm.azurewebsites.net/static/"
+# # STATIC_ROOT= os.path.join(BASE_DIR,'static/')
 
-STATIC_ROOT = 'https://projectares.scm.azurewebsites.net/wwwroot/static/'
+# STATIC_ROOT = 'https://projectares.scm.azurewebsites.net/wwwroot/static/'
+
+
+
 
 
 TINYMCE_DEFAULT_CONFIG = {
@@ -158,3 +162,7 @@ TINYMCE_DEFAULT_CONFIG = {
     'menubar': True,
     'statusbar': True,
 }
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
