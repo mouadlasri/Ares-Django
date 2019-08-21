@@ -121,6 +121,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT = path.join(PROJECT_ROOT, 'static').replace('\\', '/') 
+STATIC_URL = '/static/'
+STATICFILES_DIRS = ()
+
 TINYMCE_DEFAULT_CONFIG = {
     'height': 360,
     'width': 1120,
