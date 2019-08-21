@@ -120,8 +120,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
-STATIC_ROOT= os.path.join(BASE_DIR,'static/')
+PROJECT_DIR = 'https://projectares.scm.azurewebsites.net/wwwroot/'
+STATIC_ROOT= os.path.join(PROJECT_DIR,'static/')
 
 TINYMCE_DEFAULT_CONFIG = {
     'height': 360,
