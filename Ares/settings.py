@@ -118,11 +118,11 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
-# PROJECT_DIR = os.path.dirname(__file__)
+PROJECT_DIR = os.path.dirname(__file__)
 STATIC_URL = '/static/'
 
-STATIC_ROOT = 'D:/home/site/wwwroot/static'
-# STATIC_ROOT= os.path.join(PROJECT_DIR,'static/')
+# STATIC_ROOT = 'D:/home/site/wwwroot/static/'
+STATIC_ROOT= os.path.join(PROJECT_DIR,'/wwwroot/static/')
 # STATIC_ROOT = "https://projectares.scm.azurewebsites.net/static/"
 
 TINYMCE_DEFAULT_CONFIG = {
