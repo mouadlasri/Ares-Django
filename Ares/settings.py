@@ -25,7 +25,7 @@ SECRET_KEY = '$&q!=^ltz$f5ohh#&zy(_i@(pc#me%aqhof$!@4)j2iz0-g$aw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://projectares.azurewebsites.net']
 
 
 # Application definition
