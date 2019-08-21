@@ -125,7 +125,7 @@ STATIC_URL = '/static/'
 # PROJECT_DIR = 'https://projectares.scm.azurewebsites.net/wwwroot/'
 PROJECT_DIR = 'https://projectares.scm.azurewebsites.net/'
 # STATIC_ROOT = "https://projectares.scm.azurewebsites.net/static/"
-STATIC_ROOT= os.path.join(PROJECT_DIR,'static/')
+STATIC_ROOT= os.path.join(BASE_DIR,'static/')
 
 
 
