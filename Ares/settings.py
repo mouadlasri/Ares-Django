@@ -127,7 +127,7 @@ PROJECT_DIR = 'https://projectares.scm.azurewebsites.net/'
 # STATIC_ROOT = "https://projectares.scm.azurewebsites.net/static/"
 # STATIC_ROOT= os.path.join(BASE_DIR,'static/')
 
-STATIC_ROOT = 'https://projectares.scm.azurewebsites.net/wwwroot/static/home/css/main.css'
+STATIC_ROOT = 'https://projectares.scm.azurewebsites.net/wwwroot/static/'
 
 
 TINYMCE_DEFAULT_CONFIG = {
