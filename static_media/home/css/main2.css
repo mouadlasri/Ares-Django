@@ -1,0 +1,54 @@
+
+/* color of the whole navbar */
+.bg-steel {
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  transition: 0.4s;
+}
+
+.site-header a {
+  font-size: 22px;
+  transition: 0.4s;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #000;
+  font-family: 'Avenir';
+  padding-left: 30px;
+}
+
+.navbar-dark .navbar-brand {
+  color: #000 !important;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #273B7B;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.header-titles h1{
+  color: #cbd5db;
+  font-size: 72px;
+}
+
+@media (max-width: 991.98px) { 
+  .navbar {
+    width: 100%;
+    margin-top: 0px;
+  }
+}
+
+
+
+
+/***********************************************
+================= FOOTER section ==================
+************************************************/
+
+footer {
+  height: 40px;
+  background-color: black;
+}
