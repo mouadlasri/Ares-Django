@@ -120,16 +120,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-# STATIC_URL = '/static/'
-
 STATIC_URL = '/static/'
-# PROJECT_DIR = 'https://projectares.scm.azurewebsites.net/wwwroot/'
-# PROJECT_DIR = 'https://projectares.scm.azurewebsites.net/'
-# # STATIC_ROOT = "https://projectares.scm.azurewebsites.net/static/"
-# # STATIC_ROOT= os.path.join(BASE_DIR,'static/')
-
-# STATIC_ROOT = 'https://projectares.scm.azurewebsites.net/wwwroot/static/'
-
 
 
 
@@ -163,6 +154,7 @@ TINYMCE_DEFAULT_CONFIG = {
     'statusbar': True,
 }
 
+# Below:  Whitenoise configs
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
