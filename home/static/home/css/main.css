@@ -15,6 +15,7 @@ header {
   background-repeat: no-repeat;
   background-position-y: 50%;
   height: 100vh;
+  background-attachment: fixed;
 }
 
 #name {
@@ -61,10 +62,28 @@ ul {
   font-weight: 500;
 }
 
-.header-titles h1{
+
+.header-titles h1 {
   color: #cbd5db;
-  font-size: 92px;
+  font-size: 132px;
+  font-family: fantasy;
+  letter-spacing: 10px;
+  text-align: center;
 }
+
+h2#name-position {
+  color: #000000;
+  text-align: center;
+}
+
+h4#name-hey {
+  font-style: italic;
+  font-family: -webkit-body;
+  margin-bottom: 0;
+  color: #000000;
+  text-align: center;
+}
+
 
 @media (max-width: 991.98px) { 
   .navbar {
@@ -73,6 +92,52 @@ ul {
   }
 }
 
+
+@media (max-width: 650px) { 
+  h2#name-position {
+    font-size: 25px;
+  }
+  
+  .header-titles h1 {
+    font-size: 104px;  
+  }
+}
+
+@media (max-width: 411px) {
+  .experience-description {
+    padding: 40px;
+    margin: 0 auto !important;
+    text-align: center;
+  }
+}
+
+
+
+@media (max-width: 375px) {
+  .experience-description {
+    padding: 40px;
+    margin: 0 auto !important;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+}
+
+@media (max-width: 360px) { 
+  .header-titles h1 {
+    font-size: 71px;  
+  }
+
+  .experience-description {
+    margin-right: 5% !important;
+    margin-left: 5% !important;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 0 !important;
+  }
+
+  
+}
 
 
 
@@ -119,16 +184,16 @@ ul {
 }
 
 .experience-title {
-  background-color: #276464;
+  background-color: #212529;
   width: fit-content;
   margin: 0 auto;
-  padding: 10px 45px;
+  padding: 13px 45px;
   margin-top: 10px;
   color: white;
-  font-size: 1.1em;
-  /* font-family: 'Avenir'; */
-  font-family: 'avenirregular';
+  font-size: 1.4em;
+  font-family: 'Roboto';
   text-transform: uppercase;
+  margin-bottom: 40px;
 }
 
 .experience-description {
@@ -136,10 +201,11 @@ ul {
   /* margin: 0 auto; */
   margin-right: 25%;
   margin-left: 25%;
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 50px;
   font-size: 1.1em;
   font-family: Avenir;
+  text-align: center;
 }
 
 

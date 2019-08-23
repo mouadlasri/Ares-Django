@@ -101,6 +101,10 @@
  }
 
 
+.filter-section .btn {
+   padding: 17px 36px !important;
+}
+
 @media screen and (max-width: 992px) {
   .portfolio-project {
     max-width: 680px;
@@ -225,4 +229,41 @@ i {
   float: right;
   font-size: 30px;
   padding: 0 10px;
+}
+
+@media screen and (max-width: 768px){
+  .filter-section .btn {
+      padding: 0.8rem 2.14rem !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .filter-section {
+    margin: 0 !important;
+  }
+
+  .filter-section .btn {
+    padding: 0;
+    width: 73% !important;
+  }
+
+  .portfolio-project {
+    margin: 50px auto;
+  }
+  
+  
+}
+
+@media screen and (max-width: 360px) {
+  .portfolio-project {
+    margin: 50px auto;
+  }
+
+  .filter-section {
+    margin: 0 !important;
+  }
+
+  .filter-section .btn {
+    padding: 0.75rem 0.5rem !important;
+  }
 }
