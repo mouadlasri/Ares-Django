@@ -33,7 +33,7 @@ function scrollFunction() {
 
 var i = 0;
 var txt = "Mouad Lasri"
-var speed = 50;
+var speed = 75;
 
 function typeWriter() {
     if (i < txt.length) {

@@ -72,8 +72,9 @@ ul {
 }
 
 h2#name-position {
-  color: #000000;
+  color: #fff;
   text-align: center;
+  margin-top: 20px;
 }
 
 h4#name-hey {
