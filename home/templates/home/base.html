@@ -32,11 +32,61 @@
     <title>ML</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-offset="300" data-target="#verticalScrollspy">
+    <nav id="verticalScrollspy">
+        <ul class="nav flex-column nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#about"><span class="vertical-nav-title">About</span><svg width="12" height="12" viewBox="0 0 24 24" class="style-jz39bgab_symbol">
+                    <circle id="t" cx="12" cy="12" r="10"></circle>
+                </svg></a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#experience"><span class="vertical-nav-title">Experience</span><svg width="12" height="12"
+                        viewBox="0 0 24 24" class="style-jz39bgab_symbol">
+                        <circle id="t" cx="12" cy="12" r="10"></circle>
+                    </svg></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#portfolio"><span class="vertical-nav-title">Portfolio</span><svg width="12" height="12"
+                        viewBox="0 0 24 24" class="style-jz39bgab_symbol">
+                        <circle id="t" cx="12" cy="12" r="10"></circle>
+                    </svg></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#contact"><span class="vertical-nav-title">Contact</span><svg width="12" height="12"
+                        viewBox="0 0 24 24" class="style-jz39bgab_symbol">
+                        <circle id="t" cx="12" cy="12" r="10"></circle>
+                    </svg></a>
+            </li>
+
+            <li class="nav-item" style="display: none;">
+                <a class="nav-link" href="#experience">Experience</a>
+                <svg width="12" height="12" viewBox="0 0 24 24" class="style-jz39bgab_symbol">
+                    <circle cx="12" cy="12" r="10"></circle>
+                </svg>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+                <svg width="12" height="12" viewBox="0 0 24 24" class="style-jz39bgab_symbol">
+                    <circle cx="12" cy="12" r="10"></circle>
+                </svg>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+                <svg width="12" height="12" viewBox="0 0 24 24" class="style-jz39bgab_symbol">
+                    <circle cx="12" cy="12" r="10"></circle>
+                </svg>
+            </li> -->
+            
+        </ul>
+    </nav>
     <header class="site-header">
         <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top" id="navbar">
             <div class="container">
-                <a class="navbar-brand mr-4" href="/" id="brand">
+                <a class="navbar-brand mr-4" href="#home" id="brand">
                     ML
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
@@ -46,15 +96,15 @@
                 <div class="collapse navbar-collapse" id="navbarToggle">
                     <!-- Navbar Right Side -->
                     <div class="navbar-nav ml-auto ">
-                        <a class="nav-item nav-link navigation-title"  href="#">About</a>
-                        <a class="nav-item nav-link navigation-title"  href="#">Experience</a>
-                        <a class="nav-item nav-link navigation-title"  href="#">Contact</a>
-                        <a class="nav-item nav-link navigation-title"  href="#">Portfolio</a>
+                        <a class="nav-item nav-link navigation-title"  href="#about">About</a>
+                        <a class="nav-item nav-link navigation-title"  href="#experience">Experience</a>
+                        <a class="nav-item nav-link navigation-title"  href="#contact">Contact</a>
+                        <a class="nav-item nav-link navigation-title"  href="#portfolio">Portfolio</a>
                     </div>
                 </div>
             </div>
         </nav>
-        <section class="header-titles jumbotron jumbotron-fluid text-white d-flex justify-content-start align-items-center">
+        <section class="header-titles jumbotron jumbotron-fluid text-white d-flex justify-content-start align-items-center" id="home">
             <div class="container">
                 <h4 id="name-hey">Hey, I'm</h4>
                 <h1 id="name"></h1>
@@ -74,13 +124,13 @@
     <!-- ABOUT SECTION -->
 
 
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="row about-grid">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 about-presentation about-left">
 
                 <!-- <img src="/static/home/profile-picture.png" alt="profile image" id="profile-image"> -->
 
-                <div class="about-presentation-content">
+                <div class="about-presentation-content" >
                     <h3 class="about-me-title">About me</h3>
                     <hr style="width: 40%; border-top: 1px solid black !important; margin-left: 0;">
                     <p class="about-me-text">
@@ -165,7 +215,7 @@
     <!-- EXPERIENCE SECTION -->
 
 
-    <section class="experience-section">
+    <section class="experience-section" id="experience">
         <div class="experience" id="experience">
             <p class="experience-title">Experience</p>
             <hr style="width: 70%; border-top: 1px solid rgb(183, 183, 183);">
@@ -232,7 +282,7 @@
     
     
     <!-- Footer -->
-    <footer class="page-footer font-small footer-color darken-3">
+    <footer class="page-footer font-small footer-color darken-3" id="contact">
         <h2 style="text-align:center; padding-top: 30px;">Contact me?</h2>
         <hr style="width: 40%; border-top-color: #fb3;">
         <!-- Footer Elements -->
@@ -245,29 +295,17 @@
                 <div class="col-md-12 py-5">
                     <div class="mb-5 flex-center">
     
-                        <!-- Facebook -->
-                        <a class="fb-ic">
-                            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                        </a>
-                        <!-- Twitter -->
-                        <a class="tw-ic">
-                            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                        </a>
-                        <!-- Google +-->
-                        <a class="gplus-ic">
-                            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                        </a>
                         <!--Linkedin -->
-                        <a class="li-ic">
+                        <a class="li-ic" href="https://www.linkedin.com/in/mouad-lasri-26070a15b/" target="_blank">
                             <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                         </a>
-                        <!--Instagram-->
-                        <a class="ins-ic">
-                            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        <!--Github-->
+                        <a class="ins-ic" href="https://github.com/mouadlasri" target="_blank">
+                            <i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                         </a>
-                        <!--Pinterest-->
-                        <a class="pin-ic">
-                            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+                        <!--CodeSandbox-->
+                        <a class="pin-ic" href="https://codepen.io/mouadlasri/" target="_blank">
+                            <i class="fab fa-codepen fa-lg white-text fa-2x"> </i>
                         </a>
                     </div>
                 </div>

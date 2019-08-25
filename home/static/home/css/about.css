@@ -41,6 +41,8 @@
 .about-grid {
   height: 100%;
   margin: 0;
+  /* width: 100%; */
+  overflow: hidden;
 }
 
 .about-presentation {

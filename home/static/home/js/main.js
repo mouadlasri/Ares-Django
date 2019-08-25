@@ -1,4 +1,5 @@
 
+
 window.onload = typeWriter;
 
 window.onscroll = function () {
@@ -42,4 +43,5 @@ function typeWriter() {
         setTimeout(typeWriter, speed);
     }
 }
+
 
