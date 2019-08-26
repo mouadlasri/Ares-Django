@@ -20,7 +20,11 @@
                 
                 <div class="title">{{ post.title }}</div>
                 <div class="description-detailed">{{ post.description }}</div>
-                <a href="post/{{ post.title }}" class="button">READ MORE</a>
+                {% ifequal post.type 'web-development' %}
+                <a href="{{ post.link }}" class="button" target="_blank">VISIT PROJECT</a>
+                {% else %}
+                <a href="post/{{ post.link }}" class="button" target="_blank">READ MORE</a>
+                {% endifequal %}
             </div>
         </div>
     </div>

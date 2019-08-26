@@ -30,6 +30,10 @@
   transition: all .3s ease-in-out;
 }
 
+.portfolio-project a:hover {
+  color: black !important;
+}
+
 .portfolio-project:hover {
   transform: scale(1.03);
 }

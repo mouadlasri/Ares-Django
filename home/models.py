@@ -7,6 +7,7 @@ from django.utils import timezone
 # Create your models here.
 class Post(models.Model):
     title = models.CharField(max_length=120)
+    link = models.CharField(max_length=120)
     description = models.TextField(max_length=250,null=True)
     content = HTMLField('Content')
     thumbnail = models.TextField()
