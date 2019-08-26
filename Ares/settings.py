@@ -122,7 +122,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+    '/var/www/static/',
+]
 
+# STATIC_ROOT = "/var/www/example.com/static/"
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 TINYMCE_DEFAULT_CONFIG = {
@@ -155,6 +162,7 @@ TINYMCE_DEFAULT_CONFIG = {
 }
 
 # Below:  Whitenoise configs
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

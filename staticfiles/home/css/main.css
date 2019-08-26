@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Acme|Bree+Serif|Cabin|Play|Righteous&display=swap');
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+/***********************************************
+================= SCROLLSPY section ==================
+************************************************/
+
+#verticalScrollspy ul.nav-pills {
+  top: 40%;
+  position: fixed;
+  z-index: 5;
+  right: 0;
+}
+
+
+#verticalScrollspy .nav-link {
+  flex-direction: row-reverse;
+  cursor: default !important;
+  pointer-events: none
+}
+
+#verticalScrollspy .nav-link {
+  /* display: inline; */
+  padding: .5rem 5px;
+  font-size: 14px;
+  font-family: 'Barlow';
+}
+
+#verticalScrollspy span {
+  visibility: visible;
+  opacity: 1;
+  left: 0;
+  color: #8999D0;
+}
+
+#verticalScrollspy li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  position: relative;
+  text-align: right;
+  /* margin-top: 15px; */
+  margin-right: 15px;
+}
+
+
+#verticalScrollspy .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #c3c3c3;
+  background: none;
+  font-size: 20px;
+    
+}
+#verticalScrollspy .nav-link.active {
+  color: black;
+}
+#verticalScrollspy .nav-link.active circle {
+  fill: #c3c3c3!important;
+}
+#verticalScrollspy svg {
+  /* cursor: pointer; */
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  /* pointer-events: all; */
+  fill: transparent;
+  stroke: rgba(204, 204, 204, 1);
+  stroke-width: 4px;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+
+svg:active {
+  background-color: red;
+  color: red;
+}
+
+@media (max-width: 1000px) {
+  #verticalScrollspy {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************
+================= HEADER/NAVBAR section ==================
+************************************************/
+
+header {
+   /* height: 800px; */
+  /* background-color: #c3c3c3; */
+  /* background-image: url('/static/home/header2.jpg'); */
+  background-image: url('https://images.unsplash.com/photo-1511576661531-b34d7da5d0bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+#name {
+  color: white;
+}
+
+ul {
+  margin: 0;
+}
+
+.jumbotron {
+  /* transparent */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  min-height: 100%;
+}
+
+/* color of the whole navbar */
+.bg-steel {
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  transition: 0.4s;
+}
+
+.site-header a {
+  font-size: 22px;
+  transition: 0.4s;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #000;
+  font-family: 'Avenir';
+  padding-left: 30px;
+}
+
+.navbar-dark .navbar-brand {
+  color: #000;
+  font-size: 26px;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #273B7B;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+
+.header-titles h1 {
+  color: #cbd5db;
+  font-size: 132px;
+  font-family: fantasy;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+h2#name-position {
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h4#name-hey {
+  font-style: italic;
+  font-family: -webkit-body;
+  margin-bottom: 0;
+  color: #000000;
+  text-align: center;
+}
+
+
+@media (max-width: 991.98px) { 
+  .navbar {
+    width: 100%;
+    margin-top: 0px;
+  }
+}
+
+
+@media (max-width: 650px) { 
+  h2#name-position {
+    font-size: 25px;
+  }
+  
+  .header-titles h1 {
+    font-size: 104px;  
+  }
+}
+
+@media (max-width: 411px) {
+  .experience-description {
+    padding: 40px;
+    margin: 0 auto !important;
+    text-align: center;
+  }
+}
+
+
+
+@media (max-width: 375px) {
+  .experience-description {
+    padding: 40px;
+    margin: 0 auto !important;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+}
+
+@media (max-width: 360px) { 
+  .header-titles h1 {
+    font-size: 71px;  
+  }
+
+  .experience-description {
+    margin-right: 5% !important;
+    margin-left: 5% !important;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 0 !important;
+  }
+
+  
+}
+
+
+
+
+
+
+
+
+/***********************************************
+================= SEPARATOR ==================
+************************************************/
+
+.separator {
+  padding-top: 0;
+  margin: 0;
+  /* border-top: 4px solid  rgba(47, 46, 46, 1); */
+  border-top: 2px solid black;
+}
+
+
+
+
+
+
+
+/***********************************************
+================= EXPERIENCE section ==================
+************************************************/
+
+.experience-section {
+  background-color: rgba(155, 155, 155, 0.21);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.experience-image {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.experience-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.experience-title {
+  background-color: #212529;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 13px 45px;
+  margin-top: 10px;
+  color: white;
+  font-size: 1.4em;
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.experience-description {
+  width: fit-content;
+  /* margin: 0 auto; */
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  font-size: 1.1em;
+  font-family: Avenir;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/***********************************************
+================= FOOTER section ==================
+************************************************/
+
+  .footer-color {
+    background-color: #15181a !important;
+  }
+
+  .py-5 {
+    padding-top: 2rem !important;
+  }
